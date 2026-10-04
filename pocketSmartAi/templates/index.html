@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>PocketSmart AI</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>💰 PocketSmart AI</h1>
+
+    <p>Smart Budget & Recommendation Assistant</p>
+
+
+    <h2>Home Interior Planner</h2>
+
+    <form action="/generate-home" method="post">
+
+        <label>Budget</label>
+
+        <input type="number"
+               name="budget"
+               required>
+
+        <label>Room</label>
+
+        <select name="room">
+
+            <option>Living Room</option>
+            <option>Bedroom</option>
+            <option>Kitchen</option>
+            <option>Dining Room</option>
+
+        </select>
+
+        <label>Required Items</label>
+
+        <input type="text"
+               name="items"
+               placeholder="Lights, Fan, Table"
+               required>
+
+        <button type="submit">
+            Generate Recommendation
+        </button>
+
+    </form>
+
+
+    <h2>Party Planner</h2>
+
+    <form action="/generate-party" method="post">
+
+        <label>Budget</label>
+
+        <input type="number"
+               name="budget"
+               required>
+
+        <label>Number of Guests</label>
+
+        <input type="number"
+               name="guests"
+               required>
+
+        <label>Event Type</label>
+
+        <select name="event">
+
+            <option>Birthday</option>
+            <option>Wedding</option>
+            <option>Corporate Event</option>
+
+        </select>
+
+        <button type="submit">
+            Plan Party
+        </button>
+
+    </form>
+
+
+    <h2>Jewelry Planner</h2>
+
+    <form action="/generate-jewelry" method="post">
+
+        <label>Budget</label>
+
+        <input type="number"
+               name="budget"
+               required>
+
+        <label>Occasion</label>
+
+        <input type="text"
+               name="occasion"
+               placeholder="Wedding"
+               required>
+
+        <label>Style</label>
+
+        <input type="text"
+               name="style"
+               placeholder="Traditional"
+               required>
+
+        <button type="submit">
+            Recommend Jewelry
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
